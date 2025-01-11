@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MCQ Tracker</h1>
+            <p>Track your performance on multiple choice questions.</p>
+        </header>
+
+        <section id="question-section">
+            <h2>Question: <span id="question-number">1</span></h2>
+            <div id="question-container">
+                <p id="question-text">What is 2 + 2?</p>
+                <div id="options-container">
+                    <label><input type="radio" name="option" value="A"> 3</label>
+                    <label><input type="radio" name="option" value="B"> 4</label>
+                    <label><input type="radio" name="option" value="C"> 5</label>
+                    <label><input type="radio" name="option" value="D"> 6</label>
+                </div>
+                <button id="submit-button">Submit Answer</button>
+            </div>
+        </section>
+
+        <section id="score-section">
+            <h3>Your Performance</h3>
+            <p><strong>Correct Answers:</strong> <span id="correct-count">0</span></p>
+            <p><strong>Total Questions:</strong> <span id="total-answered">0</span></p>
+            <p><strong>Accuracy:</strong> <span id="accuracy">0%</span></p>
+        </section>
+
+        <section id="achievements">
+            <h3>Achievements</h3>
+            <p id="streak">Current Streak: 0</p>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
